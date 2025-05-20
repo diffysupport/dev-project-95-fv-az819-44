@@ -1,0 +1,51 @@
+basic:
+    name: 'new test name'
+    environments:
+        production: 'https://wordpress.diffy.website'
+        staging: ''
+        development: ''
+    breakpoints:
+        - 640
+        - 720
+        - 1200
+    pages:
+        - /
+        - '/preferences?hl=ro-md'
+        - /intl/mo/about.html
+    monitoring:
+        days: {  }
+        type: ''
+        schedule_time: '12:30 AM'
+        schedule_time_zone: Europe/London
+        compare_with: last
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: ''
+    isolate: ''
+    delay: 10
+    scroll: false
+    headers:
+        - { header: '', value: '' }
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content:
+        - { selector: '', type: title }
+    login:
+        type: ''
+        click_element: false
+        click_element_selector: ''
+        login_url: ''
+        username: ''
+        password: ''
+        username_selector: ''
+        password_selector: ''
+        submit_selector: ''
+        after_login_selector: ''
+    performance:
+        workers_production: 30
+        workers_nonproduction: 10
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: true
